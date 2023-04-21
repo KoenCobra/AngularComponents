@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-mods-home',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./mods-home.component.scss']
 })
 export class ModsHomeComponent {
+  modalOpen = false;
 
+  toggleModal(){
+    this.modalOpen = !this.modalOpen;
+  }
 }
