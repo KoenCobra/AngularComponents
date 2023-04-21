@@ -7,8 +7,13 @@ import {Component} from '@angular/core';
 })
 export class ModsHomeComponent {
   modalOpen = false;
+  accordionItems = [
+    {title: 'why is the sky blue', content: 'answer'},
+    {title: 'Question 2', content: 'answer 2'},
+    {title: 'Question 3', content: 'answer 3'}
+  ]
 
-  toggleModal(){
+  toggleModal() {
     this.modalOpen = !this.modalOpen;
   }
 }
