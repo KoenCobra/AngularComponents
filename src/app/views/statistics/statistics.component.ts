@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+
+export interface statistics {
+  value: number;
+  label: string;
+}
 
 @Component({
   selector: 'app-statistics',
@@ -6,5 +11,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./statistics.component.scss']
 })
 export class StatisticsComponent {
-
+  @Input() data: statistics[] = [];
 }
