@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 export interface itemList {
   image: string,
@@ -11,6 +11,10 @@ export interface itemList {
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.scss']
 })
-export class ItemListComponent {
+export class ItemListComponent implements OnInit {
   @Input() itemList: itemList[] = [];
+  constructor() {
+  }
+  ngOnInit(): void {
+  }
 }
