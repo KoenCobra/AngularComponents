@@ -8,6 +8,7 @@ import {SharedModule} from "../shared/shared.module";
 import { BioComponent } from './bio/bio.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PartnersComponent } from './partners/partners.component';
     TableComponent,
     BioComponent,
     CompaniesComponent,
-    PartnersComponent
+    PartnersComponent,
+    TabsComponent
   ],
   exports: [],
   imports: [
